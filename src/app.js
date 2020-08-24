@@ -30,7 +30,10 @@ export default {
                 date: ''
             },
             msgStyle: { display: 'none' },
-            selStyle: {}
+            selStyle: {
+                borderBottomLeftRadius: '4px',
+                borderBottomRightRadius: '4px'
+            }
         }
     },
 
@@ -42,6 +45,9 @@ export default {
                 return ''
             }
         },
+        bgText() {
+            return {backgroundImage: `url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1'><text x='10' y='20' fill='black' font-family='Arial, Helvetica, sans-serif' font-size='1em'>${this.multiSelText}</text></svg>")`}
+        }
     },
 
     validations: {

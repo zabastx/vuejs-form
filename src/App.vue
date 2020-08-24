@@ -28,9 +28,9 @@
             <div class="multiselect">
                 <div class="selectBox" @click="showOptions">
                 <select :style="selStyle">
-                    <option>{{ multiSelText }}</option>
+                    <option></option>
                 </select>
-                <div class="overSelect" :class="status($v.clientGroups)" @blur="$v.clientGroups.$touch"></div>
+                <div class="overSelect" :class="status($v.clientGroups)" @blur="$v.clientGroups.$touch" :style="bgText"></div>
                 </div>
                 <div class="options" v-bind:style="{ display: multiCheckDisplay }">
                 <label><input type="checkbox" value="VIP" v-model="clientGroups" />VIP</label>
