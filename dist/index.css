@@ -132,6 +132,7 @@ main span {
   top: 0;
   bottom: 0;
   border-radius: 4px;
+  background-position-y: center;
 }
 .options {
   display: none;
