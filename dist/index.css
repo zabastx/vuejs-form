@@ -48,6 +48,8 @@ main input, main select {
 }
 main input[type="date"] {
     text-transform: uppercase;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 main button {
     width: 100%;

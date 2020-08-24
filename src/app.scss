@@ -48,6 +48,8 @@ main {
     }
     input[type="date"] {
         text-transform: uppercase;
+        -webkit-appearance: none;
+        -moz-appearance: none;
     }
     button {
         width: 100%;
